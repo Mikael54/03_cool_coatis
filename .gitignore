@@ -1,0 +1,77 @@
+
+# specific folder structures
+*/sandbox/
+*/results/*
+!*/results/.gitkeep
+
+*~ 
+*.tmp
+
+
+# Temporary files created by editors or shells on Linux
+*~               # editor backup files (vim, emacs, etc.)
+*.swp            # vim swap files
+*.swx            # other swap-like files
+
+##########################
+# Application logs (don't check logs into git)
+*.log
+logs/
+
+
+
+
+# Python 
+__pycache__/     # compiled bytecode
+**/__pycache__/
+*.py[cod]        # compiled python files
+*.pyo
+*.pyd
+*.egg-info/      # packaging metadata
+dist/
+build/
+*.egg
+env/
+venv/
+.env             # environment variables file (may contain secrets)
+
+
+##########################
+# R working files
+.Rhistory        # interactive R history
+.RData           # workspace image (can be large / environment-specific)
+.Rapp.history
+.Renviron        # local environment variables (may contain secrets)
+
+# RStudio project files and user settings
+.Rproj.user/     # RStudio session/user-specific settings
+*.Rproj.user
+
+# Packrat / renv local package libraries
+packrat/         # packrat local package cache
+renv/            # renv library folder (if you vendor packages)
+
+# R package build artefacts
+*.tar.gz
+/*.Rcheck/       # package check results
+
+##########################
+# IDEs / editors
+##########################
+.vscode/         # VS Code workspace settings (user-specific)
+.idea/           # JetBrains IDEs (IntelliJ, PyCharm, RStudio uses .Rproj)
+*.sublime-workspace
+*.sublime-project
+
+##########################
+# Secrets / keys
+##########################
+# Private key and cert files
+*.pem
+*.key
+*.crt
+*.cert
+
+
+
+
