@@ -27,4 +27,4 @@ CID: 06053380
     - Use string functions like .strip() and .split() to clean text,
     - Write and run doctests to check my function automatically.
 - # My final script works:
-    -it finds all oak trees, writes the correct header, and passes all tests.
+    - it finds all oak trees, writes the correct header, and passes all tests.
