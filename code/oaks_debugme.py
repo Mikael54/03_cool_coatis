@@ -33,16 +33,16 @@ def is_an_oak(name):
     >>> is_an_oak('QUERCUS ALBA')
     True
     """
-
+    # Handle empty strings or None
     if not name:
         return False
-    
+    # Convert to lowercase and strip whitespace
     name_lower = name.lower().strip()
     genus = name_lower.split()[0] if ' ' in name_lower else name_lower
 
     if genus.startswith('quercus'):
         return True
-    
+    #Handle typos
     if genus.startswith ('q') and 5 <= len(genus) <= 9:
         target = 'quercus'
         matches = sum(1 for i, char in enumerate(genus) if i < len(target) and char == target[i])
@@ -50,12 +50,13 @@ def is_an_oak(name):
             return True
     return False
 
-
+#main code
 def main(argv): 
     f = open('../data/TestOaksData.csv','r')
     g = open('../data/JustOaksData.csv','w')
     taxa = csv.reader(f)
     csvwrite = csv.writer(g)
+    csvwrite.writerow(['Genus', 'Species'])  # Write header to output file
     next(taxa)
 
     for row in taxa:
@@ -67,7 +68,8 @@ def main(argv):
             csvwrite.writerow([row[0], row[1]])    
 
     return 0
-    
+
+#run and test  
 if (__name__ == "__main__"):
     status = main(sys.argv)
 
