@@ -6,7 +6,7 @@
 - **Mikael Minten** — mikael.minten25@imperial.ac.uk  
 - **Daniel Zhu** — haotian.zhu21@imperial.ac.uk  
 - **Avery Chen** — leyu.chen25@imperial.ac.uk  
-- **Hanxiao Wang** — hanxiao.wang@imperial.ac.uk  
+- **Hanxiao Wang** — hanxiao.wang25@imperial.ac.uk  
 **Submission Date**: 31 Oct 2025
 
 ## Individual Contributions
