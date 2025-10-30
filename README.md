@@ -2,7 +2,7 @@
 
 ## Description
 - **align_seqs_better.py**
-    - LALA
+    - This script 
     - LALA
     - LALA
 
