@@ -1,12 +1,5 @@
 #!/usr/bin/env python3
 
-""" This script will read the fasta csv that contains 2 fasta sequences and perform
-a number of alignment scoring tests in order to find the best alignment between the 
-2 sequences in the file """
-
-__author__ = 'Ore Solanke ore.solanke25@imperial.ac.uk'
-__version___ = '0.0.1'
-
 ## imports 
 import sys 
 
