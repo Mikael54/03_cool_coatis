@@ -94,6 +94,7 @@
 Each member was responsible for writing and testing their respective scripts, followed by code review sessions to ensure consistency and functionality before merging.
 
 **Key Decisions**: The team agreed to use individual Git branches for development to avoid code conflicts. After testing and peer review, each branch was merged into the main branch via pull requests. This ensured version control, clear contribution tracking, and minimal risk of overwriting others’ work.
+
 **Challenges and Solutions**: A few merge conflicts occurred during integration due to overlapping edits in shared files. These were resolved by comparing versions together and confirming the correct final code before merging.
 
 ## Code Review Summary
