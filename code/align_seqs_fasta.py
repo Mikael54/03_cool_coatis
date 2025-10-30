@@ -4,7 +4,6 @@
 __version__ = '0.0.1'
 
 import sys
-import csv
 
 
 
@@ -30,8 +29,6 @@ def import_values(file_1, file_2):
     return(s1, s2, l1, l2)
 
 
-# A function that computes a score by returning the number of matches starting
-# from arbitrary startpoint (chosen by user)
 def calculate_score(s1, s2, l1, l2, startpoint):
     matched = "" # to hold string displaying alignements
     score = 0
