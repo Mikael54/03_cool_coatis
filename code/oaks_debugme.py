@@ -57,7 +57,7 @@ def main(argv):
     taxa = csv.reader(f)
     csvwrite = csv.writer(g)
     csvwrite.writerow(['Genus', 'Species'])  # Write header to output file
-    next(taxa)
+    next(taxa) # Skip the header row (first line) of the input CSV
 
     for row in taxa:
         print(row)
