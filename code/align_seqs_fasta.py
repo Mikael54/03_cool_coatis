@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 
-"""A code that finds the best allignent for two strands of fasta files"""
+"""A code that finds the best allignent for two strands of fasta files, files must be located in the data folder"""
 __version__ = '0.0.1'
 
 import sys
