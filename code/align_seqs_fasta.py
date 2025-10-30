@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 
-"""A code that finds the best allignent for two strands"""
+"""A code that finds the best allignent for two strands of fasta files"""
 __version__ = '0.0.1'
 
 import sys
@@ -12,13 +12,11 @@ def import_values(file_1, file_2):
     filepath_1 = f"data/{file_1}"
     filepath_2 = f"data/{file_2}"
     with open(filepath_1, "r") as f:
-        reader = csv.reader(f)
-        rows = list(reader)
-        seq1 = ''.join(rows[0])    
+        lines = f.readlines()
+        seq1 = ''.join(line.strip() for line in lines if not line.startswith('>'))
     with open(filepath_2, "r") as f:
-        reader = csv.reader(f)
-        rows = list(reader)
-        seq2 = ''.join(rows[0])
+        lines = f.readlines()
+        seq2 = ''.join(line.strip() for line in lines if not line.startswith('>'))
     l1 = len(seq1)
     l2 = len(seq2)
     if l1 >= l2:
