@@ -69,15 +69,19 @@
 ---
 
 ### Avery Chen
-**Role(s)**: [e.g., Integration specialist, Error handling, Code optimization]
+**Role(s)**:
+- Code Developer & Optimisation
+- Documentation Contributor
 
 **Specific Contributions**:
-- [Describe specific code/functions written]
-- [Describe documentation contributions]
-- [Describe testing/debugging work]
-- [Describe other contributions]
+- Worked on “Missing Oaks Problem – Part 2”, focusing on improving file handling and code readability.
+- Edited find_oaks_new.py to make the program correctly skip the input header line and add the header “Genus, species” in the output CSV file.
+- Reviewed and organised the merged version of the group code to ensure it runs smoothly after integration.
+- Added clear inline comments and print statements to make the script easier for others to read and understand.
+- Wrote and ran doctests to check that the is_an_oak() function works properly.
 
-**Key commits**: [List 3-5 most significant commit hashes and brief descriptions]
+**Key commits**: 
+[293d21b] — Finished my part of writing headers of “Genus and species” into the output CSV file. Added comments to make the code more readable.
 
 ---
 ### Hanxiao Wang
