@@ -12,15 +12,19 @@
 ## Individual Contributions
 
 ### Ore Solanke
-**Role(s)**: [e.g., Lead developer, Data analysis specialist, Testing coordinator]
+**Role(s)**: 
+- README.md contributor 
+- Code consultant
 
 **Specific Contributions**:
-- [Describe specific code/functions written]
-- [Describe documentation contributions]
-- [Describe testing/debugging work]
-- [Describe other contributions]
+- Collaboration to write fasta/csv input functions in align_seqs_fasta file
+- Assisted with setting up directory/branch structure for groupwork 
+- Assisted with writing README.md
+
 
 **Key commits**: [List 3-5 most significant commit hashes and brief descriptions]
+- Updating README periodically as group finished tasks for scripts
+- Creating dummy files to demonstrate branching 
 
 ---
 
