@@ -28,18 +28,21 @@
 **Role(s)**:
 - Code developer  
 - Github repository Manager
+- Code Reviewer
 
 **Specific Contributions**:
 - Developed the `align_seqs_fasta` function to process FASTA files with support for command-line input arguments. Implemented default behavior to use sample data files when no input is provided.  
+- Reviewed the `align_seqs_better` code and tested it, ensuring it had correct filepaths to both load the data and results.
 - Created a `.gitignore` file to exclude unnecessary and temporary files across multiple programming languages.  
 - Managed repository maintenance tasks, including file cleanup (e.g., removal of `dummy.txt`) and merging three separate branches into the `main` branch.  
 - Contributed to the writing and editing of the `contributions.md` documentation.  
 
 **Key commits**: 
 
-- e1a8e86 (HEAD -> main, origin/main) Updating the gitignore file so that it ignores files inside folders and adding a gitkeep to the results folder. Also cleaned up the repo (removing unnesesary files).
-- 57bb06c Merge branch 'Mikael' into main. This included two other branches.
--56cdf09 Creating the  align sequences to have the ability to input any two files, with default files if none are given.
+- [`e1a8e86`] (HEAD -> main, origin/main) Updating the gitignore file so that it ignores files inside folders and adding a gitkeep to the results folder. Also cleaned up the repo (removing unnesesary files).
+- [`57bb06c`] Merge branch 'Mikael' into main. This included two other branches.  
+- [`56cdf09`] Creating the  align sequences to have the ability to input any two files, with default files if none are given.  
+- [`7f4f9c8`] Bug testing the align_seqs_better code and changing it so that it works from the /code directory,  instead of the main directory.  
 
 ### Daniel Zhu
 **Role(s)**: 
@@ -91,8 +94,8 @@
 **Meeting Schedule**: The group met once a week, with one in-person meeting in Week 4 and another in Week 5 to discuss progress. Communication between meetings was maintained through a WhatsApp group chat, email, and occasional Microsoft Teams calls for quick coordination and sharing updates.
 
 **Work Distribution Strategy**: 
-- **Ore** and **Mikael** colaborated on **FASTA Question 1**
-- **Hanxiao** worked independently on **FASTA Question 2**
+- **Mikael** worked on **FASTA Question 1**
+- **Hanxiao** worked on **FASTA Question 2**, **Mikael** reviewed it.
 - **Daniel** and **Avery** focused on the **Missing Oaks** question.
 
 Each member was responsible for writing and testing their respective scripts, followed by code review sessions to ensure consistency and functionality before merging.
