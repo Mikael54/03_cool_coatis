@@ -25,13 +25,15 @@
 ---
 
 ### Mikael Minten
-**Role(s)**: [e.g., Code reviewer, Visualization specialist, Documentation lead]
+**Role(s)**:
+- Code developer  
+- Github repository Manager
 
 **Specific Contributions**:
-- [Describe specific code/functions written]
-- [Describe documentation contributions]
-- [Describe testing/debugging work]
-- [Describe other contributions]
+- Developed the `align_seqs_fasta` function to process FASTA files with support for command-line input arguments. Implemented default behavior to use sample data files when no input is provided.  
+- Created a `.gitignore` file to exclude unnecessary and temporary files across multiple programming languages.  
+- Managed repository maintenance tasks, including file cleanup (e.g., removal of `dummy.txt`) and merging three separate branches into the `main` branch.  
+- Contributed to the writing and editing of the `contributions.md` documentation.  
 
 **Key commits**: [List 3-5 most significant commit hashes and brief descriptions]
 
