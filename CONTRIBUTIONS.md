@@ -35,9 +35,11 @@
 - Managed repository maintenance tasks, including file cleanup (e.g., removal of `dummy.txt`) and merging three separate branches into the `main` branch.  
 - Contributed to the writing and editing of the `contributions.md` documentation.  
 
-**Key commits**: [List 3-5 most significant commit hashes and brief descriptions]
+**Key commits**: 
 
----
+- e1a8e86 (HEAD -> main, origin/main) Updating the gitignore file so that it ignores files inside folders and adding a gitkeep to the results folder. Also cleaned up the repo (removing unnesesary files).
+- 57bb06c Merge branch 'Mikael' into main. This included two other branches.
+-56cdf09 Creating the  align sequences to have the ability to input any two files, with default files if none are given.
 
 ### Daniel Zhu
 **Role(s)**: 
