@@ -154,8 +154,8 @@ def save_results(results: Dict, out_dir: str = 'results') -> Tuple[str, str]:
 # ---------------------------
 
 DEFAULTS = (
-    os.path.join('data', 'seq1.fasta'),
-    os.path.join('data', 'seq2.fasta'),
+    os.path.join('..', 'data', '407228326.fasta'),
+    os.path.join('..', 'data', '407228412.fasta'),
 )
 
 BUILTIN_EXAMPLE = (
@@ -167,7 +167,7 @@ def main():
     parser = argparse.ArgumentParser(description='Align two DNA FASTA sequences and record all best alignments.')
     parser.add_argument('fasta1', nargs='?', help='Path to first FASTA file')
     parser.add_argument('fasta2', nargs='?', help='Path to second FASTA file')
-    parser.add_argument('-o', '--outdir', default='results', help='Output directory (default: results)')
+    parser.add_argument('-o', '--outdir', default='../results', help='Output directory (default: ../results)')
     args = parser.parse_args()
 
     # Determine input sources
