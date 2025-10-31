@@ -23,8 +23,8 @@
 
 
 **Key commits**: [List 3-5 most significant commit hashes and brief descriptions]
-- Updating README periodically as group finished tasks for scripts
-- Creating dummy files to demonstrate branching 
+- [`fc2cc69`] - Updating README periodically as group finished tasks for scripts
+- [`7e01f94`] - Creating dummy files to demonstrate branching 
 
 ---
 
@@ -47,6 +47,8 @@
 - [`57bb06c`] Merge branch 'Mikael' into main. This included two other branches.  
 - [`56cdf09`] Creating the  align sequences to have the ability to input any two files, with default files if none are given.  
 - [`7f4f9c8`] Bug testing the align_seqs_better code and changing it so that it works from the /code directory,  instead of the main directory.  
+
+---
 
 ### Daniel Zhu
 **Role(s)**: 
@@ -121,9 +123,7 @@ Each member was responsible for writing and testing their respective scripts, fo
 [Describe the code review process used, e.g., pull request reviews, pair programming sessions]
 
 **Pull Requests**:
-- PR #1: [Brief description] - Reviewed by: [names]
-- PR #2: [Brief description] - Reviewed by: [names]
-- [etc.]
+-We didn’t use a pull request because we manually pulled changes from main into our own branches and merged them back into main ourselves, instead of using GitHub’s PR workflow for review and integration. 
 
 ## Testing and Quality Assurance
 
@@ -134,6 +134,8 @@ Within our two sub-groups, we reviewed and discussed each other's code. We also 
 We declare that the above contributions are accurate and that all team members participated actively in this group work.
 
 **Signatures** (or typed names with date):
-- [Team Member 1]: _______________  Date: _______
-- [Team Member 2]: _______________  Date: _______
-- [Team Member 3]: _______________  Date: _______
+- [Team Member 1]: Ore Solanke      Date: 31 Oct 2025
+- [Team Member 2]: Mikael Minten    Date: 31 Oct 2025
+- [Team Member 3]: Daniel Zhu       Date: 31 Oct 2025
+- [Team Member 4]: Avery Chen       Date: 31 Oct 2025
+- [Team Member 5]: Hanxiao Wang     Date: 31 Oct 2025
