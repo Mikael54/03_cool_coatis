@@ -123,7 +123,7 @@ Each member was responsible for writing and testing their respective scripts, fo
 
 ## Testing and Quality Assurance
 
-[Describe testing approaches used and who contributed to testing]
+Within our two sub-groups, we reviewed and discussed each other's code. We also checked for robustness by ensuring things like our file names were all the same and that our functions ran similarly. 
 
 ## Declaration
 
