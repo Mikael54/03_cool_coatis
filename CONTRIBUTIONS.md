@@ -22,7 +22,7 @@
 - Assisted with writing README.md
 
 
-**Key commits**: [List 3-5 most significant commit hashes and brief descriptions]
+**Key commits**: 
 - [`fc2cc69`] - Updating README periodically as group finished tasks for scripts
 - [`7e01f94`] - Creating dummy files to demonstrate branching 
 
@@ -83,7 +83,7 @@
 - Wrote and ran doctests to check that the is_an_oak() function works properly.
 
 **Key commits**: 
-[293d21b] — Finished my part of writing headers of “Genus and species” into the output CSV file. Added comments to make the code more readable.
+- [`293d21b`] — Finished my part of writing headers of “Genus and species” into the output CSV file. Added comments to make the code more readable.
 
 ---
 ### Hanxiao Wang
@@ -99,7 +99,7 @@
 - Assisted teammates in understanding the difference between mutable and immutable objects (lists vs tuples).
 
 **Key commits**: 
--8450c7e Merge branch 'hanxiaoang' into Mikael
+- [`8450c7e`] Merge branch 'hanxiaoang' into Mikael
 
 ---
 
@@ -134,8 +134,8 @@ Within our two sub-groups, we reviewed and discussed each other's code. We also 
 We declare that the above contributions are accurate and that all team members participated actively in this group work.
 
 **Signatures** (or typed names with date):
-- [Team Member 1]: Ore Solanke      Date: 31 Oct 2025
-- [Team Member 2]: Mikael Minten    Date: 31 Oct 2025
-- [Team Member 3]: Daniel Zhu       Date: 31 Oct 2025
-- [Team Member 4]: Avery Chen       Date: 31 Oct 2025
-- [Team Member 5]: Hanxiao Wang     Date: 31 Oct 2025
+- [Team Member 1]: Ore Solanke          **Date**: 31 Oct 2025
+- [Team Member 2]: Mikael Minten        **Date**: 31 Oct 2025
+- [Team Member 3]: Daniel Zhu           **Date**: 31 Oct 2025
+- [Team Member 4]: Avery Chen           **Date**: 31 Oct 2025
+- [Team Member 5]: Hanxiao Wang         **Date**: 31 Oct 2025
