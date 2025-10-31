@@ -77,15 +77,19 @@
 
 ---
 ### Hanxiao Wang
-**Role(s)**: [e.g., Integration specialist, Error handling, Code optimization]
+**Role(s)**: 
+-Code Developer
+-Data Analysis Specialist
+
 
 **Specific Contributions**:
-- [Describe specific code/functions written]
-- [Describe documentation contributions]
-- [Describe testing/debugging work]
-- [Describe other contributions]
+- Implemented and tested Python functions such as foo_1() to foo_6() for control flow and recursion exercises (e.g., factorial computation using loops and recursion).
+- Contributed to explaining how local and global variables behave in different Python scopes within our shared code files.
+- Performed iterative testing of loops, control flow tools, and comprehensions to verify correctness and prevent infinite loops.
+- Assisted teammates in understanding the difference between mutable and immutable objects (lists vs tuples).
 
-**Key commits**: [List 3-5 most significant commit hashes and brief descriptions]
+**Key commits**: 
+-8450c7e Merge branch 'hanxiaoang' into Mikael
 
 ---
 
