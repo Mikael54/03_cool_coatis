@@ -64,8 +64,8 @@
 
 **Key commits**: 
 - [`d9d8615`]— Added the Missing Oaks script and implemented header-skipping logic.  
-- [`bb7091b`] — Updated `JustOaksData.csv` after running `oaks_debugme.py`.  
-- [`5b1b7eb`] — Merged branch `daniel` with `main`.  
+- [`bb7091b`]— Updated `JustOaksData.csv` after running `oaks_debugme.py`.  
+- [`5b1b7eb`]— Merged branch `daniel` with `main`.  
 - [`867dab3`]— Uploaded the `CONTRIBUTIONS.md` template for collaborative editing.
 
 ---
@@ -120,7 +120,6 @@ Each member was responsible for writing and testing their respective scripts, fo
 
 ## Code Review Summary
 
-[Describe the code review process used, e.g., pull request reviews, pair programming sessions]
 
 **Pull Requests**:
 -We didn’t use a pull request because we manually pulled changes from main into our own branches and merged them back into main ourselves, instead of using GitHub’s PR workflow for review and integration. 
