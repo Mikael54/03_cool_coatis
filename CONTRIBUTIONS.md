@@ -37,6 +37,7 @@
 **Specific Contributions**:
 - Developed the `align_seqs_fasta` function to process FASTA files with support for command-line input arguments. Implemented default behavior to use sample data files when no input is provided.  
 - Reviewed the `align_seqs_better` code and tested it, ensuring it had correct filepaths to both load the data and results.
+- Reviewed the `pp_regress_loc.R` code and fixed a bug where all regressions had the same result. Then merged it with the ore_sol branch via pull request.
 - Created a `.gitignore` file to exclude unnecessary and temporary files across multiple programming languages.  
 - Managed repository maintenance tasks, including file cleanup (e.g., removal of `dummy.txt`) and merging three separate branches into the `main` branch.  
 - Contributed to the writing and editing of the `contributions.md` documentation.  
@@ -47,6 +48,7 @@
 - [`57bb06c`] Merge branch 'Mikael' into main. This included two other branches.  
 - [`56cdf09`] Creating the  align sequences to have the ability to input any two files, with default files if none are given.  
 - [`7f4f9c8`] Bug testing the align_seqs_better code and changing it so that it works from the /code directory,  instead of the main directory.  
+- [`336cd13`]  Updated the code to resolve two issues: duplicate results appearing three times, and all results incorrectly sharing the same slope and intercept.
 
 ---
 
@@ -122,7 +124,8 @@ Each member was responsible for writing and testing their respective scripts, fo
 
 
 **Pull Requests**:
--We didn’t use a pull request because we manually pulled changes from main into our own branches and merged them back into main ourselves, instead of using GitHub’s PR workflow for review and integration. 
+- PR #1: Mikael Minten reviewed the pp_regress_loc.R located in the ore_sol branch, and fixed a bug in the code in the mikael_pp_regress_loc branch. The changes were pushed back into the ore_sol branch via a pull request. Reviewed by: Ore Solanke
+
 
 ## Testing and Quality Assurance
 
