@@ -1,4 +1,4 @@
-# Author: Ore Solanke
+# Author: Ore Solanke, Mikael Minten
 # Date: October 2025
 # Script: pp_regress.R
 # Description: EcolArchives Linear Regression Plotting and LM analysis
@@ -28,7 +28,7 @@ eco.df$Prey.mass.unit[eco.df$Prey.mass.unit == "mg"] <- "g"
 location_eco_reg <- eco.df %>% 
   group_by(Location, Type.of.feeding.interaction, Predator.lifestage) %>% 
   summarise({
-    # Check if there are enough observations
+    # Only perform regression if there are at least 3 data points
     if(n() < 3) {
       tibble(
         slope = NA_real_,
@@ -39,6 +39,7 @@ location_eco_reg <- eco.df %>%
       )
     } else {
       tryCatch({
+        # Try to extract values for a linear model
         location_interation_lm <- lm(log10(Prey.mass) ~ log10(Predator.mass), data = cur_data())
         loc_lm_summary <- summary(location_interation_lm)
         tibble(
@@ -48,6 +49,7 @@ location_eco_reg <- eco.df %>%
           F_statistic = loc_lm_summary$fstatistic[1],
           p_value = loc_lm_summary$coefficients[2, 4]
         )
+        # If an error occurs, return NA values
       }, error = function(e) {
         tibble(
           slope = NA_real_,
@@ -64,4 +66,5 @@ location_eco_reg <- eco.df %>%
 location_eco_reg <- location_eco_reg %>% 
   filter(!is.na(slope))
 
+# Write results to CSV
 write.csv(location_eco_reg, "../results/pp_regress_location_results.csv")
