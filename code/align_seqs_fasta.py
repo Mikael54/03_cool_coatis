@@ -8,8 +8,8 @@ import sys
 
 
 def import_values(file_1, file_2):
-    filepath_1 = f"data/{file_1}"
-    filepath_2 = f"data/{file_2}"
+    filepath_1 = f"../data/{file_1}"
+    filepath_2 = f"../data/{file_2}"
     with open(filepath_1, "r") as f:
         lines = f.readlines()
         seq1 = ''.join(line.strip() for line in lines if not line.startswith('>'))
