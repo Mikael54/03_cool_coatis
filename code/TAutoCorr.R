@@ -3,19 +3,11 @@
 # Groupwork Practical: Autocorrelation in Florida weather (successive-year correlation)
 # Usage:
 #   Rscript TAutoCorr.R --input data/florida_temp.csv --output results/autocorr --nperm 5000
-suppressWarnings(suppressMessages({
-  args <- commandArgs(trailingOnly = TRUE)
-}))
 
-get_arg <- function(flag, default=NULL) {
-  idx <- which(args == flag)
-  if (length(idx) == 0 || idx == length(args)) return(default)
-  args[idx + 1]
-}
 
-infile  <- get_arg("--input",  "data/florida_temp.csv")
-outstem <- get_arg("--output", "results/autocorr")
-nperm   <- as.integer(get_arg("--nperm", "5000"))
+infile  <- "../data/florida_weather.csv"
+outstem <- "../results/autocorr"
+nperm   <- 5000
 dir.create(dirname(outstem), showWarnings=FALSE, recursive=TRUE)
 
 df <- read.csv(infile, header=TRUE)
@@ -38,9 +30,6 @@ for (i in seq_len(nperm)) {
 
 pval <- mean(perm_cors >= obs_cor)
 
-write.csv(data.frame(Year=df$Year, Temp=df$Temp), sprintf("%s_input.csv", outstem), row.names=FALSE)
-write.csv(data.frame(observed=obs_cor, p_value=pval), sprintf("%s_stats.csv", outstem), row.names=FALSE)
-
 pdf(sprintf("%s_hist.pdf", outstem), width=6, height=4)
 hist(perm_cors, breaks=50, main="Null distribution of successive-year correlation",
      xlab="Correlation under permutation")
@@ -57,4 +46,3 @@ n_permutations = %d
 ", obs_cor, pval, nperm)
 writeLines(report, con=sprintf("%s_report.txt", outstem))
 
-message("Done. Outputs written to: ", dirname(outstem))
