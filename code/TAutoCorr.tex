@@ -14,8 +14,7 @@
 
 \section*{Introduction}
 
-We investigated whether annual mean temperatures in Florida exhibit
-successive-year autocorrelation. This allows us to discover whether warm years tend to be followed by warm years more often than expected by chance. Meanwhile, this also helps us to better understand the climate dynamics and predict future weather.
+In this project, we looked at whether Florida’s annual mean temperatures show any year-to-year dependence. This allows us to discover whether warm years tend to be followed by warm years more often than expected by chance. 
 
 \section*{Methods}
 
@@ -24,11 +23,10 @@ We analysed the dataset \texttt{florida\_weather.csv}. This dataset contains ann
 To quantify temporal dependence, we used the Pearson correlation to calculate
 between temperature in year $t$ and year $t+1$:
 \[
-r_{\text{obs}} = \mathrm{cor}(\mathrm{Temp}_t, \mathrm{Temp}_{t+1}).
+r_{\text{obs}} = \operatorname{cor}(\mathrm{Temp}_t, \mathrm{Temp}_{t+1}).
 \]
 
-We assume that the annual  temperature data are unlikely to be statistically independent. In this case, we used a permutation test instead of the
-standard correlation p-value. We randomly permuted the temperature
+Because temperature data over time may not satisfy the assumptions of the usual correlation test, we used a permutation test instead. We randomly permuted the temperature
 values 5000 times. This recalculated the successive-year autocorrelation for each
 permuted sequence to construct a null distribution. 
 
@@ -41,9 +39,9 @@ r_{\text{obs}} = 0.3262.
 \]
 
 The null distribution of correlations obtained from 5000 permutations
-was near zero. Only 0.02\% of the permuted correlation values were
+was near zero. Only 0.0002 of the permuted correlation values were
 greater than or equal to the observed value, resulting in a one-sided
-p-value of 0.22.
+p-value of 0.0002.
 \[
 p = 0.0002.
 \]
@@ -63,6 +61,6 @@ Florida’s annual temperatures. This successfully supports that warm years tend
 \section*{Conclusion}
 
 This analysis shows significant successive-year autocorrelation in the Florida
-temperature time series. 
+temperature time series. The vertical line shows the observed correlation r_obs = 0.3262.
 
 \end{document}
