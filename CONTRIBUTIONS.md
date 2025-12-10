@@ -97,8 +97,8 @@
 ---
 ### Hanxiao Wang
 **Role(s)**: 
--Code Developer
--Data Analysis Specialist
+- Code Developer
+- Data Analysis Specialist
 
 
 **Specific Contributions**:
@@ -122,7 +122,7 @@
 - **Mikael** worked on **FASTA Question 1**
 - **Hanxiao** worked on **FASTA Question 2**, **Mikael** reviewed it.
 - **Daniel** and **Avery** focused on the **Missing Oaks** question.
-- **Hanxiao** worked on **Autocorrelation in Florida weather**. **Daniel** reviewed it, wrote the report and uploaded the source code. **Avery** test the R script and revised the report.
+- **Hanxiao**, **Daniel** and **Avery** worked on **Autocorrelation in Florida weather**. **Hanxiao** finished the `TAutoCorr.R` script. **Daniel** reviewed it, wrote the report and uploaded the source code. **Avery** tested the R script and revised the report.
 
 Each member was responsible for writing and testing their respective scripts, followed by code review sessions to ensure consistency and functionality before merging.
 
