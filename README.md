@@ -20,6 +20,23 @@
     - The script is robust in that it allows for some misspellings of the oak genus while also employing doctests to ensure that the script handles such cases as expected.
     - Output: JustOaksData.csv which contains the a header and the oaks species found in the original output. 
 
+
+- **TAutoCorr.R**
+    - Contains functions to calculate lag-1 autocorrelation for Florida annual temperature time series data using permutation tests.
+    - The main script loads the Florida weather dataset, computes observed autocorrelation values, generates a null distribution through random permutations, and assesses statistical significance.
+    - Output: Autocorrelation results and associated plots, saved to the results/ directory.
+
+
+- **TAutoCorr.tex**
+    - Contains the LaTeX source for the Florida weather autocorrelation report, including methods, results, figures, and interpretation of the permutation test.
+    - Compiles the autocorrelation analysis outputs into a structured, reproducible report.
+    - Output: Compiled as TAutoCorr.pdf.
+
+
+- **TAutoCorr.pdf**
+    - The compiled report generated from TAutoCorr.tex, presenting the autocorrelation analysis, figures, and statistical results.
+
+
 ## Languages 
 - Python  
 - R  
