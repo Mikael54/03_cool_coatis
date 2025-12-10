@@ -93,6 +93,7 @@
 
 **Key commits**: 
 - [`293d21b`] — Finished my part of writing headers of “Genus and species” into the output CSV file. Added comments to make the code more readable.
+- [`d0a092d`] — Revised the report. Fix typos and grammar mistakes. 
 
 ---
 ### Hanxiao Wang
