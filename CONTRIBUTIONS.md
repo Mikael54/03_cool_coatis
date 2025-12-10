@@ -7,7 +7,7 @@
 - **Daniel Zhu** — haotian.zhu21@imperial.ac.uk  
 - **Avery Chen** — leyu.chen25@imperial.ac.uk  
 - **Hanxiao Wang** — hanxiao.wang25@imperial.ac.uk  
-**Submission Date**: 31 Oct 2025
+**Submission Date**: 10 Dec 2025
 
 ## Individual Contributions
 
@@ -55,13 +55,17 @@
 ### Daniel Zhu
 **Role(s)**: 
 - Code Developer
+- Report Writer
 - Documentation Contributor
+- Code Reviewer
 
 **Specific Contributions**:
 - Edited `oaks_debugme.py` to ensure the program correctly excludes the header line (`next(taxa)`) before processing species names.  
 - Verified the functionality of `is_an_oak()` through **doctests** and additional print-debugging.  
 - Managed file cleanup (removing redundant folders) and merging the `daniel` branch into `main`.
 - Uploaded the **CONTRIBUTIONS.md** template for the group to edit and filled in group information.
+- Uploaded Hanxiao's first draft of `TAutoCorr.R` and revised the R script.
+- Write TAutoCorr report in LaTeX. Uploaded the pdf report and source code.
 
 
 **Key commits**: 
@@ -69,6 +73,9 @@
 - [`bb7091b`]— Updated `JustOaksData.csv` after running `oaks_debugme.py`.  
 - [`5b1b7eb`]— Merged branch `daniel` with `main`.  
 - [`867dab3`]— Uploaded the `CONTRIBUTIONS.md` template for collaborative editing.
+- [`a06bcdc`]_ Upload Hanxiao's first draft of Autocorrelation in Florida weather Assignment for further testing.
+- [`451aac6`]_ Add LaTeX source code and compiled PDF for autocorrelation report.
+
 
 ---
 
@@ -99,9 +106,11 @@
 - Contributed to explaining how local and global variables behave in different Python scopes within our shared code files.
 - Performed iterative testing of loops, control flow tools, and comprehensions to verify correctness and prevent infinite loops.
 - Assisted teammates in understanding the difference between mutable and immutable objects (lists vs tuples).
+- Completed the first draft of `TAutoCorr.R`.
 
 **Key commits**: 
-- [`8450c7e`] Merge branch 'hanxiaoang' into Mikael
+- [`8450c7e`]_ Merge branch 'hanxiaoang' into Mikael
+- [`a06bcdc`]_ Upload Hanxiao's first draft of Autocorrelation in Florida weather Assignment for further testing.
 
 ---
 
@@ -113,6 +122,7 @@
 - **Mikael** worked on **FASTA Question 1**
 - **Hanxiao** worked on **FASTA Question 2**, **Mikael** reviewed it.
 - **Daniel** and **Avery** focused on the **Missing Oaks** question.
+- **Hanxiao** worked on **Autocorrelation in Florida weather**. **Daniel** reviewed it, wrote the report and uploaded the source code. **Avery** test the R script and revised the report.
 
 Each member was responsible for writing and testing their respective scripts, followed by code review sessions to ensure consistency and functionality before merging.
 
@@ -125,6 +135,8 @@ Each member was responsible for writing and testing their respective scripts, fo
 
 **Pull Requests**:
 - PR #1: Mikael Minten reviewed the pp_regress_loc.R located in the ore_sol branch, and fixed a bug in the code in the mikael_pp_regress_loc branch. The changes were pushed back into the ore_sol branch via a pull request. Reviewed by: Ore Solanke
+- PR #3-4: Daniel Zhu uploaded Hanxiao's first draft of autocorrelation analysis script (TAutoCorr.R) together with the Florida weather dataset.
+- PR #5-6: Daniel Zhu added the LaTeX source code and compiled PDF for the autocorrelation report, and later revised the report and recompiled the final PDF following feedback.
 
 
 ## Testing and Quality Assurance
@@ -138,6 +150,6 @@ We declare that the above contributions are accurate and that all team members p
 **Signatures** (or typed names with date):
 - [Team Member 1]: Ore Solanke          **Date**: 31 Oct 2025
 - [Team Member 2]: Mikael Minten        **Date**: 31 Oct 2025
-- [Team Member 3]: Daniel Zhu           **Date**: 31 Oct 2025
-- [Team Member 4]: Avery Chen           **Date**: 31 Oct 2025
-- [Team Member 5]: Hanxiao Wang         **Date**: 31 Oct 2025
+- [Team Member 3]: Daniel Zhu           **Date**: 10 Dec 2025
+- [Team Member 4]: Avery Chen           **Date**: 10 Dec 2025
+- [Team Member 5]: Hanxiao Wang         **Date**: 10 Dec 2025
