@@ -1,0 +1,68 @@
+\documentclass[12pt]{article}
+
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{geometry}
+\geometry{margin=1in}
+
+\title{Autocorrelation in Florida Weather}
+\author{Group 3 Cool Coatis}
+\date{Dec 2025}
+
+\begin{document}
+\maketitle
+
+\section*{Introduction}
+
+We investigated whether annual mean temperatures in Florida exhibit
+successive-year autocorrelation. This allows us to discover whether warm years tend to be followed by warm years more often than expected by chance. Meanwhile, this also helps us to better understand the climate dynamics and predict future weather.
+
+\section*{Methods}
+
+We analysed the dataset \texttt{florida\_weather.csv}. This dataset contains annual mean temperatures from 1901 to 2000 in Florida. 
+
+To quantify temporal dependence, we used the Pearson correlation to calculate
+between temperature in year $t$ and year $t+1$:
+\[
+r_{\text{obs}} = \mathrm{cor}(\mathrm{Temp}_t, \mathrm{Temp}_{t+1}).
+\]
+
+We assume that the annual  temperature data are unlikely to be statistically independent. In this case, we used a permutation test instead of the
+standard correlation p-value. We randomly permuted the temperature
+values 5000 times. This recalculated the successive-year autocorrelation for each
+permuted sequence to construct a null distribution. 
+
+
+\section*{Results}
+
+The observed autocorrelation was
+\[
+r_{\text{obs}} = 0.3262.
+\]
+
+The null distribution of correlations obtained from 5000 permutations
+was near zero. Only 0.02\% of the permuted correlation values were
+greater than or equal to the observed value, resulting in a one-sided
+p-value of 0.22.
+\[
+p = 0.0002.
+\]
+
+This provides strong evidence for positive temporal autocorrelation in
+Florida’s annual temperatures. This successfully supports that warm years tend to be followed by warm years more often than expected under a random ordering of the same values.
+
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=0.75\textwidth]{../results/autocorr_hist.pdf}
+    \caption{
+    Null distribution of lag-1 autocorrelation coefficients generated
+    from 5000 random permutations of annual mean temperatures. 
+    }
+\end{figure}
+
+\section*{Conclusion}
+
+This analysis shows significant successive-year autocorrelation in the Florida
+temperature time series. 
+
+\end{document}
