@@ -15,16 +15,19 @@
 **Role(s)**: 
 - README.md contributor 
 - Code consultant
+- Code Developer
 
 **Specific Contributions**:
 - Collaboration to write fasta/csv input functions in align_seqs_fasta file
 - Assisted with setting up directory/branch structure for groupwork 
 - Assisted with writing README.md
+- Developed code for the pp_regress_loc.R with Mikael
 
 
 **Key commits**: 
 - [`fc2cc69`] - Updating README periodically as group finished tasks for scripts
-- [`7e01f94`] - Creating dummy files to demonstrate branching 
+- [`7e01f94`] - Creating dummy files to demonstrate branching
+- [`3856e47`] - Adapted regression script to incorporate location as factor- need to fix one column in final df
 
 ---
 
