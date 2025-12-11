@@ -40,15 +40,17 @@
 - Reviewed the `pp_regress_loc.R` code and fixed a bug where all regressions had the same result. Then merged it with the ore_sol branch via pull request.
 - Created a `.gitignore` file to exclude unnecessary and temporary files across multiple programming languages.  
 - Managed repository maintenance tasks, including file cleanup (e.g., removal of `dummy.txt`) and merging three separate branches into the `main` branch.  
-- Contributed to the writing and editing of the `contributions.md` documentation.  
+- Contributed to the writing and editing of the `contributions.md` and `README` documentation.  
 
 **Key commits**: 
 
-- [`e1a8e86`] (HEAD -> main, origin/main) Updating the gitignore file so that it ignores files inside folders and adding a gitkeep to the results folder. Also cleaned up the repo (removing unnesesary files).
-- [`57bb06c`] Merge branch 'Mikael' into main. This included two other branches.  
 - [`56cdf09`] Creating the  align sequences to have the ability to input any two files, with default files if none are given.  
 - [`7f4f9c8`] Bug testing the align_seqs_better code and changing it so that it works from the /code directory,  instead of the main directory.  
 - [`336cd13`]  Updated the code to resolve two issues: duplicate results appearing three times, and all results incorrectly sharing the same slope and intercept.
+- [`e1a8e86`] (HEAD -> main, origin/main) Updating the gitignore file so that it ignores files inside folders and adding a gitkeep to the results folder. Also cleaned up the repo (removing unnesesary files).
+- [`57bb06c`] Merge branch 'Mikael' into main. This included two other branches.  
+- [`20b1c80`] Updating the README with the `pp_regress_loc` practical information.
+ 
 
 ---
 
