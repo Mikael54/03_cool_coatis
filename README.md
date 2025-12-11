@@ -21,6 +21,12 @@
     - Output: JustOaksData.csv which contains the a header and the oaks species found in the original output. 
 
 
+- **pp_regress_loc.R**
+    - This script performs linear regression analysis on predator-prey mass relationships from the EcolArchives dataset, grouping by location, feeding interaction type, and predator life stage.
+    - The script loads the ecological data, converts prey mass units to grams, and calculates regression statistics (slope, intercept, R-squared, F-statistic, p-value) for each group with sufficient data points (n ≥ 3).
+    - Output: pp_regress_location_results.csv which contains regression results for each location-interaction-lifestage combination, saved to the results/ directory.
+
+
 - **TAutoCorr.R**
     - Contains functions to calculate lag-1 autocorrelation for Florida annual temperature time series data using permutation tests.
     - The main script loads the Florida weather dataset, computes observed autocorrelation values, generates a null distribution through random permutations, and assesses statistical significance.
