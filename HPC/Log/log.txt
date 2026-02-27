@@ -1,0 +1,594 @@
+> source("hw2625_HPC_2025_main.R")
+> question_5()
+[1] "The small initial populations are most likely to go extinct, especially the small spread and small adult cases. This happens because demographic stochasticity has a stronger effect when population size is low, so random runs of poor survival or reproduction are harder to buffer."
+> question_6()
+[1] "The deterministic approximation is more appropriate for the large mixed initial condition. With larger populations, random birth and death noise averages out more strongly, so the mean stochastic trajectory stays closer to the deterministic expectation."
+> source("hw2625_HPC_2025_main.R")
+> process_neutral_cluster_results()
+[[1]]
+[1] 1.0975782 0.9150217 0.8326165 0.7945508 0.7751851 0.7620464 0.7494049 0.7285663 0.6367656
+
+[[2]]
+ [1] 2.1944612 1.8263650 1.6589779 1.5733931 1.5149068 1.4566123 1.3627188 1.1945637 0.8801044 0.3229593
+
+[[3]]
+ [1] 5.484929e+00 4.558811e+00 4.133878e+00 3.920592e+00 3.735684e+00 3.539339e+00 3.244263e+00
+ [8] 2.708192e+00 1.883502e+00 8.372377e-01 1.121048e-01 9.680254e-05
+
+[[4]]
+ [1] 10.999830401  9.128429086  8.273521306  7.822853509  7.469959720  7.010430358  6.389612042
+ [8]  5.278906084  3.590332839  1.628323087  0.304642781  0.005893576
+
+> plot_neutral_cluster_results()
+$size_500
+[1] 1.0975782 0.9150217 0.8326165 0.7945508 0.7751851 0.7620464 0.7494049 0.7285663 0.6367656
+
+$size_1000
+ [1] 2.1944612 1.8263650 1.6589779 1.5733931 1.5149068 1.4566123 1.3627188 1.1945637 0.8801044 0.3229593
+
+$size_2500
+ [1] 5.484929e+00 4.558811e+00 4.133878e+00 3.920592e+00 3.735684e+00 3.539339e+00 3.244263e+00
+ [8] 2.708192e+00 1.883502e+00 8.372377e-01 1.121048e-01 9.680254e-05
+
+$size_5000
+ [1] 10.999830401  9.128429086  8.273521306  7.822853509  7.469959720  7.010430358  6.389612042
+ [8]  5.278906084  3.590332839  1.628323087  0.304642781  0.005893576
+
+> question_1()
+[1] "Spreading individuals across life stages creates a faster initial increase because some individuals are already in stages that transition quickly into highly reproductive stages. Eventually, both trajectories are governed by the same projection matrix, so the long-term growth pattern becomes similar, but early transient dynamics differ due to the starting age structure."
+> question_2()
+[1] "Compared with the deterministic model, these trajectories are much less smooth because birth and death outcomes are random at each time step. The deterministic model tracks expected values, while the stochastic model includes demographic noise that creates irregular fluctuations, especially when population size is lower."
+> question_14()
+[1] "What state will the system always converge to...: It converges to monodominance (1 species) because without speciation, random drift eventually eliminates all diversity."
+> question_18()
+[1] "Explain what you found...: Both initial conditions converge towards a dynamic equilibrium of species richness determined by the balance between speciation and extinction (drift)."
+> question_22()
+[1] "Does the initial condition matter?: No, after the burn-in period, the system reaches a dynamic equilibrium where the species abundance distribution is independent of the starting state."
+> Challenge_A()
+    simulation_number initial_condition initial_state time_step population_size
+1                   1       large adult   large adult         0             100
+2                   1       large adult   large adult         1             287
+3                   1       large adult   large adult         2             277
+4                   1       large adult   large adult         3             249
+5                   1       large adult   large adult         4             208
+6                   1       large adult   large adult         5             194
+7                   1       large adult   large adult         6             219
+8                   1       large adult   large adult         7             238
+9                   1       large adult   large adult         8             240
+10                  1       large adult   large adult         9             270
+11                  1       large adult   large adult        10             252
+12                  1       large adult   large adult        11             261
+13                  1       large adult   large adult        12             286
+14                  1       large adult   large adult        13             278
+15                  1       large adult   large adult        14             314
+16                  1       large adult   large adult        15             312
+17                  1       large adult   large adult        16             346
+18                  1       large adult   large adult        17             366
+19                  1       large adult   large adult        18             383
+20                  1       large adult   large adult        19             408
+21                  1       large adult   large adult        20             433
+22                  1       large adult   large adult        21             467
+23                  1       large adult   large adult        22             456
+24                  1       large adult   large adult        23             481
+25                  1       large adult   large adult        24             483
+26                  1       large adult   large adult        25             471
+27                  1       large adult   large adult        26             519
+28                  1       large adult   large adult        27             585
+29                  1       large adult   large adult        28             592
+30                  1       large adult   large adult        29             537
+31                  1       large adult   large adult        30             557
+32                  1       large adult   large adult        31             588
+33                  1       large adult   large adult        32             656
+34                  1       large adult   large adult        33             634
+35                  1       large adult   large adult        34             600
+36                  1       large adult   large adult        35             624
+37                  1       large adult   large adult        36             639
+38                  1       large adult   large adult        37             731
+39                  1       large adult   large adult        38             752
+40                  1       large adult   large adult        39             807
+41                  1       large adult   large adult        40             790
+42                  1       large adult   large adult        41             775
+43                  1       large adult   large adult        42             840
+44                  1       large adult   large adult        43             882
+45                  1       large adult   large adult        44             885
+46                  1       large adult   large adult        45             914
+47                  1       large adult   large adult        46             973
+48                  1       large adult   large adult        47            1015
+49                  1       large adult   large adult        48            1063
+50                  1       large adult   large adult        49            1055
+51                  1       large adult   large adult        50            1116
+52                  1       large adult   large adult        51            1181
+53                  1       large adult   large adult        52            1244
+54                  1       large adult   large adult        53            1310
+55                  1       large adult   large adult        54            1422
+56                  1       large adult   large adult        55            1477
+57                  1       large adult   large adult        56            1508
+58                  1       large adult   large adult        57            1565
+59                  1       large adult   large adult        58            1720
+60                  1       large adult   large adult        59            1663
+61                  1       large adult   large adult        60            1789
+62                  1       large adult   large adult        61            1901
+63                  1       large adult   large adult        62            2011
+64                  1       large adult   large adult        63            2062
+65                  1       large adult   large adult        64            2154
+66                  1       large adult   large adult        65            2278
+67                  1       large adult   large adult        66            2343
+68                  1       large adult   large adult        67            2444
+69                  1       large adult   large adult        68            2485
+70                  1       large adult   large adult        69            2538
+71                  1       large adult   large adult        70            2632
+72                  1       large adult   large adult        71            2738
+73                  1       large adult   large adult        72            2864
+74                  1       large adult   large adult        73            3019
+75                  1       large adult   large adult        74            3115
+76                  1       large adult   large adult        75            3262
+77                  1       large adult   large adult        76            3385
+78                  1       large adult   large adult        77            3575
+79                  1       large adult   large adult        78            3725
+80                  1       large adult   large adult        79            3950
+81                  1       large adult   large adult        80            4092
+82                  1       large adult   large adult        81            4174
+83                  1       large adult   large adult        82            4359
+84                  1       large adult   large adult        83            4536
+85                  1       large adult   large adult        84            4784
+86                  1       large adult   large adult        85            5050
+87                  1       large adult   large adult        86            5266
+88                  1       large adult   large adult        87            5435
+89                  1       large adult   large adult        88            5562
+90                  1       large adult   large adult        89            5753
+91                  1       large adult   large adult        90            6062
+92                  1       large adult   large adult        91            6421
+93                  1       large adult   large adult        92            6723
+94                  1       large adult   large adult        93            6877
+95                  1       large adult   large adult        94            6948
+96                  1       large adult   large adult        95            7334
+97                  1       large adult   large adult        96            7633
+98                  1       large adult   large adult        97            8001
+99                  1       large adult   large adult        98            8365
+100                 1       large adult   large adult        99            8676
+101                 1       large adult   large adult       100            9148
+102                 1       large adult   large adult       101            9456
+103                 1       large adult   large adult       102            9848
+104                 1       large adult   large adult       103           10375
+105                 1       large adult   large adult       104           10729
+106                 1       large adult   large adult       105           11092
+107                 1       large adult   large adult       106           11466
+108                 1       large adult   large adult       107           11903
+109                 1       large adult   large adult       108           12302
+110                 1       large adult   large adult       109           12729
+111                 1       large adult   large adult       110           13257
+112                 1       large adult   large adult       111           13851
+113                 1       large adult   large adult       112           14358
+114                 1       large adult   large adult       113           15008
+115                 1       large adult   large adult       114           15569
+116                 1       large adult   large adult       115           16066
+117                 1       large adult   large adult       116           16609
+118                 1       large adult   large adult       117           17275
+119                 1       large adult   large adult       118           17839
+120                 1       large adult   large adult       119           18538
+121                 1       large adult   large adult       120           19381
+122                 2       large adult   large adult         0             100
+123                 2       large adult   large adult         1             275
+124                 2       large adult   large adult         2             258
+125                 2       large adult   large adult         3             226
+126                 2       large adult   large adult         4             179
+127                 2       large adult   large adult         5             206
+128                 2       large adult   large adult         6             217
+129                 2       large adult   large adult         7             235
+130                 2       large adult   large adult         8             235
+131                 2       large adult   large adult         9             255
+132                 2       large adult   large adult        10             243
+133                 2       large adult   large adult        11             273
+134                 2       large adult   large adult        12             293
+135                 2       large adult   large adult        13             304
+136                 2       large adult   large adult        14             306
+137                 2       large adult   large adult        15             329
+138                 2       large adult   large adult        16             316
+139                 2       large adult   large adult        17             364
+140                 2       large adult   large adult        18             374
+141                 2       large adult   large adult        19             387
+142                 2       large adult   large adult        20             403
+143                 2       large adult   large adult        21             391
+144                 2       large adult   large adult        22             409
+145                 2       large adult   large adult        23             469
+146                 2       large adult   large adult        24             455
+147                 2       large adult   large adult        25             460
+148                 2       large adult   large adult        26             444
+149                 2       large adult   large adult        27             500
+150                 2       large adult   large adult        28             529
+151                 2       large adult   large adult        29             542
+152                 2       large adult   large adult        30             572
+153                 2       large adult   large adult        31             589
+154                 2       large adult   large adult        32             590
+155                 2       large adult   large adult        33             623
+156                 2       large adult   large adult        34             693
+157                 2       large adult   large adult        35             761
+158                 2       large adult   large adult        36             823
+159                 2       large adult   large adult        37             800
+160                 2       large adult   large adult        38             816
+161                 2       large adult   large adult        39             919
+162                 2       large adult   large adult        40             963
+163                 2       large adult   large adult        41            1012
+164                 2       large adult   large adult        42             987
+165                 2       large adult   large adult        43            1013
+166                 2       large adult   large adult        44            1109
+167                 2       large adult   large adult        45            1118
+168                 2       large adult   large adult        46            1166
+169                 2       large adult   large adult        47            1273
+170                 2       large adult   large adult        48            1282
+171                 2       large adult   large adult        49            1285
+172                 2       large adult   large adult        50            1324
+173                 2       large adult   large adult        51            1331
+174                 2       large adult   large adult        52            1362
+175                 2       large adult   large adult        53            1405
+176                 2       large adult   large adult        54            1494
+177                 2       large adult   large adult        55            1597
+178                 2       large adult   large adult        56            1660
+179                 2       large adult   large adult        57            1734
+180                 2       large adult   large adult        58            1821
+181                 2       large adult   large adult        59            1751
+182                 2       large adult   large adult        60            1875
+183                 2       large adult   large adult        61            1906
+184                 2       large adult   large adult        62            2012
+185                 2       large adult   large adult        63            2156
+186                 2       large adult   large adult        64            2293
+187                 2       large adult   large adult        65            2339
+188                 2       large adult   large adult        66            2438
+189                 2       large adult   large adult        67            2534
+190                 2       large adult   large adult        68            2583
+191                 2       large adult   large adult        69            2545
+192                 2       large adult   large adult        70            2741
+193                 2       large adult   large adult        71            2910
+194                 2       large adult   large adult        72            3077
+195                 2       large adult   large adult        73            3195
+196                 2       large adult   large adult        74            3221
+197                 2       large adult   large adult        75            3230
+198                 2       large adult   large adult        76            3293
+199                 2       large adult   large adult        77            3483
+200                 2       large adult   large adult        78            3758
+ [ reached 'max' / getOption("max.print") -- omitted 1814800 rows ]
+> Challenge_B()
+[1] "Based on the mean trajectories and their stabilization, the system reaches dynamic equilibrium at approximately generation 200 ."
+> Challenge_C()
+    generation mean_richness initial_richness
+1            0      1.000000                1
+2            1      4.833333                1
+3            2      7.433333                1
+4            3      9.733333                1
+5            4     11.733333                1
+6            5     12.933333                1
+7            6     14.466667                1
+8            7     15.500000                1
+9            8     16.166667                1
+10           9     17.233333                1
+11          10     18.166667                1
+12          11     19.833333                1
+13          12     20.300000                1
+14          13     19.966667                1
+15          14     21.166667                1
+16          15     21.600000                1
+17          16     21.900000                1
+18          17     22.500000                1
+19          18     22.500000                1
+20          19     22.733333                1
+21          20     22.966667                1
+22          21     23.833333                1
+23          22     23.466667                1
+24          23     23.600000                1
+25          24     23.700000                1
+26          25     23.900000                1
+27          26     25.266667                1
+28          27     24.066667                1
+29          28     23.466667                1
+30          29     23.166667                1
+31          30     23.566667                1
+32          31     23.066667                1
+33          32     23.700000                1
+34          33     24.266667                1
+35          34     24.633333                1
+36          35     24.800000                1
+37          36     25.533333                1
+38          37     24.866667                1
+39          38     24.933333                1
+40          39     25.133333                1
+41          40     25.566667                1
+42          41     25.433333                1
+43          42     25.900000                1
+44          43     25.500000                1
+45          44     25.333333                1
+46          45     24.633333                1
+47          46     24.633333                1
+48          47     25.866667                1
+49          48     25.133333                1
+50          49     25.066667                1
+51          50     25.100000                1
+52          51     25.000000                1
+53          52     24.866667                1
+54          53     25.033333                1
+55          54     25.800000                1
+56          55     25.533333                1
+57          56     26.200000                1
+58          57     26.766667                1
+59          58     26.900000                1
+60          59     26.966667                1
+61          60     26.400000                1
+62          61     25.333333                1
+63          62     25.800000                1
+64          63     25.866667                1
+65          64     26.000000                1
+66          65     25.800000                1
+67          66     25.833333                1
+68          67     25.200000                1
+69          68     26.200000                1
+70          69     25.533333                1
+71          70     24.966667                1
+72          71     24.933333                1
+73          72     24.766667                1
+74          73     24.466667                1
+75          74     25.300000                1
+76          75     25.800000                1
+77          76     25.166667                1
+78          77     25.200000                1
+79          78     25.100000                1
+80          79     24.766667                1
+81          80     24.500000                1
+82          81     25.100000                1
+83          82     24.900000                1
+84          83     24.600000                1
+85          84     25.133333                1
+86          85     24.866667                1
+87          86     25.166667                1
+88          87     26.100000                1
+89          88     25.900000                1
+90          89     25.900000                1
+91          90     26.066667                1
+92          91     26.500000                1
+93          92     26.166667                1
+94          93     25.766667                1
+95          94     25.733333                1
+96          95     25.566667                1
+97          96     26.033333                1
+98          97     25.133333                1
+99          98     25.200000                1
+100         99     25.300000                1
+101        100     26.400000                1
+102        101     26.300000                1
+103        102     26.166667                1
+104        103     26.600000                1
+105        104     25.466667                1
+106        105     26.366667                1
+107        106     25.900000                1
+108        107     25.500000                1
+109        108     25.700000                1
+110        109     25.533333                1
+111        110     25.533333                1
+112        111     25.533333                1
+113        112     24.866667                1
+114        113     24.233333                1
+115        114     24.833333                1
+116        115     25.066667                1
+117        116     25.066667                1
+118        117     24.933333                1
+119        118     24.966667                1
+120        119     25.100000                1
+121        120     26.133333                1
+122        121     25.666667                1
+123        122     26.466667                1
+124        123     26.266667                1
+125        124     25.866667                1
+126        125     26.033333                1
+127        126     26.300000                1
+128        127     25.900000                1
+129        128     24.966667                1
+130        129     25.866667                1
+131        130     26.133333                1
+132        131     26.266667                1
+133        132     26.133333                1
+134        133     26.833333                1
+135        134     26.500000                1
+136        135     25.600000                1
+137        136     25.333333                1
+138        137     25.200000                1
+139        138     25.166667                1
+140        139     25.700000                1
+141        140     24.933333                1
+142        141     24.933333                1
+143        142     24.600000                1
+144        143     25.200000                1
+145        144     25.266667                1
+146        145     25.433333                1
+147        146     25.033333                1
+148        147     25.066667                1
+149        148     24.966667                1
+150        149     25.400000                1
+151        150     26.433333                1
+152        151     25.900000                1
+153        152     25.800000                1
+154        153     25.833333                1
+155        154     25.300000                1
+156        155     25.433333                1
+157        156     25.966667                1
+158        157     24.866667                1
+159        158     24.933333                1
+160        159     24.333333                1
+161        160     24.966667                1
+162        161     25.100000                1
+163        162     24.633333                1
+164        163     24.900000                1
+165        164     25.666667                1
+166        165     26.233333                1
+167        166     26.466667                1
+168        167     26.400000                1
+169        168     25.733333                1
+170        169     25.566667                1
+171        170     26.700000                1
+172        171     26.900000                1
+173        172     27.400000                1
+174        173     27.000000                1
+175        174     26.333333                1
+176        175     25.733333                1
+177        176     25.666667                1
+178        177     25.900000                1
+179        178     27.033333                1
+180        179     27.200000                1
+181        180     27.466667                1
+182        181     27.066667                1
+183        182     26.800000                1
+184        183     26.600000                1
+185        184     27.100000                1
+186        185     26.733333                1
+187        186     26.433333                1
+188        187     26.366667                1
+189        188     26.300000                1
+190        189     26.866667                1
+191        190     26.566667                1
+192        191     26.266667                1
+193        192     26.400000                1
+194        193     26.166667                1
+195        194     26.400000                1
+196        195     26.566667                1
+197        196     25.800000                1
+198        197     26.700000                1
+199        198     26.233333                1
+200        199     25.933333                1
+201        200     26.133333                1
+202        201     26.533333                1
+203        202     27.066667                1
+204        203     27.033333                1
+205        204     27.300000                1
+206        205     27.200000                1
+207        206     26.833333                1
+208        207     26.100000                1
+209        208     26.600000                1
+210        209     26.133333                1
+211        210     26.233333                1
+212        211     26.700000                1
+213        212     27.233333                1
+214        213     27.000000                1
+215        214     27.033333                1
+216        215     27.133333                1
+217        216     27.300000                1
+218        217     26.933333                1
+219        218     26.600000                1
+220        219     26.200000                1
+221        220     26.133333                1
+222        221     25.300000                1
+223        222     26.000000                1
+224        223     25.600000                1
+225        224     25.533333                1
+226        225     26.033333                1
+227        226     25.966667                1
+228        227     25.500000                1
+229        228     25.666667                1
+230        229     26.133333                1
+231        230     25.666667                1
+232        231     25.333333                1
+233        232     24.766667                1
+234        233     25.700000                1
+235        234     25.933333                1
+236        235     24.733333                1
+237        236     24.400000                1
+238        237     24.466667                1
+239        238     24.133333                1
+240        239     24.400000                1
+241        240     25.433333                1
+242        241     25.466667                1
+243        242     24.900000                1
+244        243     25.200000                1
+245        244     25.766667                1
+246        245     25.500000                1
+247        246     25.633333                1
+248        247     25.500000                1
+249        248     25.933333                1
+250        249     25.733333                1
+251        250     25.866667                1
+252        251     25.166667                1
+253        252     24.666667                1
+254        253     25.933333                1
+255        254     26.366667                1
+256        255     26.100000                1
+257        256     25.600000                1
+258        257     25.966667                1
+259        258     25.800000                1
+260        259     26.033333                1
+261        260     26.366667                1
+262        261     25.400000                1
+263        262     25.566667                1
+264        263     25.500000                1
+265        264     25.566667                1
+266        265     25.366667                1
+267        266     25.300000                1
+268        267     26.300000                1
+269        268     25.800000                1
+270        269     26.266667                1
+271        270     26.333333                1
+272        271     26.033333                1
+273        272     26.066667                1
+274        273     25.566667                1
+275        274     25.266667                1
+276        275     25.900000                1
+277        276     26.466667                1
+278        277     25.033333                1
+279        278     25.333333                1
+280        279     25.633333                1
+281        280     25.233333                1
+282        281     26.266667                1
+283        282     26.166667                1
+284        283     26.433333                1
+285        284     25.966667                1
+286        285     26.300000                1
+287        286     27.066667                1
+288        287     27.566667                1
+289        288     26.600000                1
+290        289     25.600000                1
+291        290     24.800000                1
+292        291     25.333333                1
+293        292     25.400000                1
+294        293     25.100000                1
+295        294     25.600000                1
+296        295     25.200000                1
+297        296     25.700000                1
+298        297     24.733333                1
+299        298     25.000000                1
+300        299     25.300000                1
+301        300     25.233333                1
+302        301     25.400000                1
+303        302     25.733333                1
+304        303     26.466667                1
+305        304     25.400000                1
+306        305     26.133333                1
+307        306     25.966667                1
+308        307     26.066667                1
+309        308     25.266667                1
+310        309     25.566667                1
+311        310     26.000000                1
+312        311     26.100000                1
+313        312     26.266667                1
+314        313     26.133333                1
+315        314     25.800000                1
+316        315     25.966667                1
+317        316     26.533333                1
+318        317     26.166667                1
+319        318     26.300000                1
+320        319     26.133333                1
+321        320     26.500000                1
+322        321     26.200000                1
+323        322     25.833333                1
+324        323     25.933333                1
+325        324     25.600000                1
+326        325     24.900000                1
+327        326     25.400000                1
+328        327     25.566667                1
+329        328     25.433333                1
+330        329     24.666667                1
+331        330     24.033333                1
+332        331     24.666667                1
+333        332     24.666667                1
+ [ reached 'max' / getOption("max.print") -- omitted 4880 rows ]
+> Challenge_D()
+[1] "Estimated burn-in requirements from the mean trajectories are: size 500: ~1288 generations; size 1000: ~7345 generations; size 2500: ~1810 generations; size 5000: ~2321 generations"
+警告信息:
+In ggplot2::geom_vline(data = burnin_df, ggplot2::aes(xintercept = recommended_burnin),  :
+  Ignoring unknown parameters: `inherit.aes`
+> Challenge_E()
+[1] "Coalescence used approximately 0.001 CPU hours for the equivalent replicate set. The cluster outputs indicate approximately 1150 CPU hours across 100 jobs. Agreement between methods is good when octave RMSE is small; here the mean RMSE was 0.318 . Coalescence is faster because it works backwards through lineage-merging events instead of simulating every forward-time birth and death event."
